@@ -1,30 +1,19 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 1: January 10, 2017
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: Implemented [Boyer-Moore string search](https://en.wikipedia.org/wiki/Boyer–Moore_string_search_algorithm) for [Kfr Reader](https://github.com/Henkoglobin/kfr-reader).
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts:**
 
-**Link to work:** [Calculator App](http://www.example.com)
+I wanted to remove the need to hold each and every file in memory twice (as `byte[]` and as `string`),
+since the `string` representation was only needed to search for keywords. Instead, I now search in
+the `byte[]` representation using Boyer-Moore string search.
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+I had problems with the algorithm because I only implemented the bad-character jumps at first.
+This works well in some cases, but apparently the algorithm can get stuck this way.
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+I will need to revisit this implementation and check if it's considerably slower than the old
+approach.
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
-
-
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
-
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Link to work:** [Kfr Reader, commit fbe6c87](https://github.com/Henkoglobin/kfr-reader/commit/fbe6c87b25a3a4b6001697db472022e6c077c635)
