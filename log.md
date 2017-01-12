@@ -17,3 +17,32 @@ I will need to revisit this implementation and check if it's considerably slower
 approach.
 
 **Link to work:** [Kfr Reader, commit fbe6c87](https://github.com/Henkoglobin/kfr-reader/commit/fbe6c87b25a3a4b6001697db472022e6c077c635)
+
+### Day 2: January 11, 2017
+
+**Today's Progress**: Barely any. It took until the next day to get anything working as I wanted it to.
+
+**Thoughts:**
+
+Today, I got my shiny new Raspberry Pi Zero in the mail. Naturally, I wanted to test it out and so I decided that instead of coding, I would play around with the Pi and the HATs I had ordered along with it.
+
+I actually had three goals, of which I achieved none:
+
+1. Make the RPi Zero work over OTG
+2. Get an output on my [PaPiRus](https://thepihut.com/products/papirus-zero-epaper-eink-screen-phat-for-pi-zero?variant=28041609745)
+3. Get sensor data from my [Enviro pHAT](https://thepihut.com/products/enviro-phat?variant=21227156996)
+
+I found the sensors on the Enviro pHAT most interesting, so I decided to try that first. However, I will have to solder the headers onto the board (which I could've known had I read the description on PiHut). As I'm not yet comfortable enough with soldering, I decided to postpone this project.
+
+Next I wanted to make the PaPiRus work - this does not require any soldering on my part (given that I have a Raspberry Pi 3 lying around that has the same GPIO layout as the Zero). So I connected the screen to the board, connected it to the Pi, installed all of the software, and... it didn't work. I have found [an issue](https://github.com/PiSupply/PaPiRus/issues/61) on GitHub with the exact symptoms seen in my tests, but couldn't figure out how to solve the problems. I will try again soon with a freshly flashed Raspbian Jessie.
+
+What was left for me to do was to make the RPi work over [OTG](https://en.wikipedia.org/wiki/USB_On-The-Go). I did not get this to work either, at least not until the following day.
+I followed [these instructions](https://gist.github.com/gbaman/975e2db164b3ca2b51ae11e45e8fd40a) to configure my RPi for OTG, but could not get it to work. I missed a couple important points, though:
+
+1. You've got to have [Bonjour](https://support.apple.com/kb/DL999) installed. Yep, the printer services stuff.
+2. You've got to use the correct USB port on the RPi: They're labeled "USB" and "PWR" - you must connect your PC to the "USB" port in order to connect with the RPi.
+3. You need to install a special driver. GitHub user [christophe94700](https://github.com/christophe94700) has blogged about that (in French, but you get the gist even without speaking French): [See their comment on GitHub](https://gist.github.com/gbaman/975e2db164b3ca2b51ae11e45e8fd40a#gistcomment-1788198)
+
+With this driver, I got OTG to work on Day 3 of #100DaysOfCoding. However, I'm not quite satisfied: It seems that OTG requires the RPi to boot using an external power source (via the second USB port). Only after the Pi has booted can I connect it to my Windows PC and SSH into it from there. I would have thought that I could just power it from the PC and use it at the same time, while still having the second USB port free for any peripherals. I will look into that at a later point in time.
+
+**Link to work:** [My tweet about me setting up my Raspberry Pi Zero](https://twitter.com/Henkoglobin/status/819286510210007045)
