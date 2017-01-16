@@ -2,7 +2,7 @@
 
 ### Day 1: January 10, 2017
 
-**Today's Progress**: Implemented [Boyer-Moore string search](https://en.wikipedia.org/wiki/Boyer–Moore_string_search_algorithm) for [Kfr Reader](https://github.com/Henkoglobin/kfr-reader).
+**Today's Progress:** Implemented [Boyer-Moore string search](https://en.wikipedia.org/wiki/Boyer–Moore_string_search_algorithm) for [Kfr Reader](https://github.com/Henkoglobin/kfr-reader).
 
 **Thoughts:**
 
@@ -20,7 +20,7 @@ approach.
 
 ### Day 2: January 11, 2017
 
-**Today's Progress**: Barely any. It took until the next day to get anything working as I wanted it to.
+**Today's Progress:** Barely any. It took until the next day to get anything working as I wanted it to.
 
 **Thoughts:**
 
@@ -49,7 +49,7 @@ With this driver, I got OTG to work on Day 3 of #100DaysOfCoding. However, I'm n
 
 ### Day 3: January 12, 2017
 
-**Today's Progress**: Got OTG to work in my Raspberry Pi Zero. Also started writing a Xamarin App (which I cannot yet make public :( )
+**Today's Progress:** Got OTG to work in my Raspberry Pi Zero. Also started writing a Xamarin App (which I cannot yet make public :( )
 
 **Thoughts:**
 
@@ -67,7 +67,7 @@ I am quite proud of my `NavigationService` and might blog about it in detail in 
 
 ### Day 4: January 13, 2017
 
-**Today's progress**: Implemented a new service to locally save and load data in a Xamarin App.
+**Today's progress:** Implemented a new service to locally save and load data in a Xamarin App.
 
 **Thoughts:**
 
@@ -75,5 +75,18 @@ Today, I wanted to implement basic read/write facilities for the app which I wil
 These notes will eventually be synced via a central server. For the moment, however, I decided to just test the interface and implement a service to store notes locally.
 
 Thankfully, I did not have to implement file access per-plattform (as I would normally have to). Instead, I was able to use the awesome [PCLStorage](https://github.com/dsplaisted/PCLStorage) library.
+
+**Link to work:** None, unfortunately :(
+
+### Day 5: January 14, 2017
+
+**Today's progress:** Fixed some bugs in Project SK
+
+**Thoughts:**
+
+When I implemented the service stub for storing and fetching notes in Project SK yesterday, I had problems with ADB on my PC (because I was working on my private PC rather than on my work PC). 
+This prevented me from testing the app. Today, however, I could solve the problems (by deleting the app from my phone - sometimes it's as easy as that).
+
+Finally able to test the app, I was able to fix a couple of bugs. With the app now working, I was able to show it to [@jerainne](https://twitter.com/jerainne) to get some early feedback :)
 
 **Link to work:** None, unfortunately :(
