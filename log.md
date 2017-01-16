@@ -46,3 +46,21 @@ I followed [these instructions](https://gist.github.com/gbaman/975e2db164b3ca2b5
 With this driver, I got OTG to work on Day 3 of #100DaysOfCoding. However, I'm not quite satisfied: It seems that OTG requires the RPi to boot using an external power source (via the second USB port). Only after the Pi has booted can I connect it to my Windows PC and SSH into it from there. I would have thought that I could just power it from the PC and use it at the same time, while still having the second USB port free for any peripherals. I will look into that at a later point in time.
 
 **Link to work:** [My tweet about me setting up my Raspberry Pi Zero](https://twitter.com/Henkoglobin/status/819286510210007045)
+
+### Day 3: January 12, 2017
+
+**Today's Progress**: Got OTG to work in my Raspberry Pi Zero. Also started writing a Xamarin App (which I cannot yet make public :( ))
+
+**Thoughts:**
+
+As I spoilered in the last log entry, I got OTG to work in my Raspberry Pi Zero today by installing Bonjour on my PC, using the correct USB port on the Pi and powering it on before connecting to the PC.
+
+However, the main achievement for this day was that I started to work on a new side project: Twitter user [@jerainne](https://twitter.com/jerainne) came to me with a pretty cool app idea and I started work on a prototype.
+I cannot yet talk about the app itself (because @jerainne might want to keep it a secret ;) ), but I hope that I will learn a lot during creation of the prototype.
+
+The app will be implemented in Xamarin.Forms using the [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) architectural pattern. It will also feature a backend written in C# using ASP.NET Core.
+
+Today, I implemented the very basics for the app, including some "bootstrapping" code for Commands (which I wouldn't have to write if I used a framework like [MVVM Light](http://www.mvvmlight.net/)) and a service for navigation.
+I am quite proud of my `NavigationService` and might blog about it in detail in the following days.
+
+**Link to work:** None, unfortunately :(
