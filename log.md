@@ -1,5 +1,9 @@
 # 100 Days Of Code - Log
 
+**Skipped Days:**
+
+1. January 15, 2017
+
 ### Day 1: January 10, 2017
 
 **Today's Progress:** Implemented [Boyer-Moore string search](https://en.wikipedia.org/wiki/Boyer–Moore_string_search_algorithm) for [Kfr Reader](https://github.com/Henkoglobin/kfr-reader).
@@ -88,5 +92,16 @@ When I implemented the service stub for storing and fetching notes in Project SK
 This prevented me from testing the app. Today, however, I could solve the problems (by deleting the app from my phone - sometimes it's as easy as that).
 
 Finally able to test the app, I was able to fix a couple of bugs. With the app now working, I was able to show it to [@jerainne](https://twitter.com/jerainne) to get some early feedback :)
+
+**Link to work:** None, unfortunately :(
+
+### Day 5.5: January 15, 2017
+
+**Today's progress:** Skipped this day.
+
+**Thoughts:**
+
+I have skipped coding this day due to various reasons - mainly because I was too tired to do anything (and I didn't get anything done in the household either). 
+I will be back to coding tomorrow, though! :)
 
 **Link to work:** None, unfortunately :(
