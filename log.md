@@ -49,7 +49,7 @@ With this driver, I got OTG to work on Day 3 of #100DaysOfCoding. However, I'm n
 
 ### Day 3: January 12, 2017
 
-**Today's Progress**: Got OTG to work in my Raspberry Pi Zero. Also started writing a Xamarin App (which I cannot yet make public :( ))
+**Today's Progress**: Got OTG to work in my Raspberry Pi Zero. Also started writing a Xamarin App (which I cannot yet make public :( )
 
 **Thoughts:**
 
@@ -62,5 +62,18 @@ The app will be implemented in Xamarin.Forms using the [MVVM](https://en.wikiped
 
 Today, I implemented the very basics for the app, including some "bootstrapping" code for Commands (which I wouldn't have to write if I used a framework like [MVVM Light](http://www.mvvmlight.net/)) and a service for navigation.
 I am quite proud of my `NavigationService` and might blog about it in detail in the following days.
+
+**Link to work:** None, unfortunately :(
+
+### Day 4: January 13, 2017
+
+**Today's progress**: Implemented a new service to locally save and load data in a Xamarin App.
+
+**Thoughts:**
+
+Today, I wanted to implement basic read/write facilities for the app which I will codename "Project SK" from now on. In Project SK, users are able to save notes, kinda like in a basic "Todo App".
+These notes will eventually be synced via a central server. For the moment, however, I decided to just test the interface and implement a service to store notes locally.
+
+Thankfully, I did not have to implement file access per-plattform (as I would normally have to). Instead, I was able to use the awesome [PCLStorage](https://github.com/dsplaisted/PCLStorage) library.
 
 **Link to work:** None, unfortunately :(
